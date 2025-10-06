@@ -34,31 +34,4 @@ Generate Pokémon card with user info + random stats & abilities
 
 Download the card as an image
 
-🔧 Installation
 
-Clone the repository:
-
-git clone https://github.com/yourusername/pokemon-card-generator.git
-cd pokemon-card-generator
-
-
-Install dependencies:
-
-npm install
-
-
-Add your Twitter API key (optional if using backend):
-
-Create .env file in root:
-
-REACT_APP_TWITTER_BEARER_TOKEN=your_twitter_api_token
-
-
-Start the app:
-
-npm start
-
-
-Open in your browser:
-
-http://localhost:3000
