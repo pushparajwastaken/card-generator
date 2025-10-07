@@ -6,10 +6,11 @@ import Input from "./Components/Input/Input";
 import Card from "./Components/Card/Card";
 
 function App() {
+  const [input, setInnput] = useState("");
   return (
     <div className="w=flex h-screen">
-      <Input />
-      <Card />
+      <Input setInnput={setInnput} />
+      <Card input={input} />
     </div>
   );
 }
