@@ -1,16 +1,37 @@
-# React + Vite
+Pokémon Card Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun React app that generates Pokémon-style cards from a Twitter user’s profile. Enter a Twitter username, and it will create a custom card featuring the user’s profile picture, name, alias, bio, random abilities, and stats. You can even download your card as an image!
 
-Currently, two official plugins are available:
+🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Input a Twitter username to generate a card
 
-## React Compiler
+Displays profile picture, name, alias, and bio
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Generates random abilities and stats (Attack, Speed, Defence, Power)
 
-## Expanding the ESLint configuration
+Download your Pokémon card as a PNG image
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Aesthetic, Pokémon-inspired UI with Tailwind CSS
+
+🛠️ Tech Stack
+
+Frontend: React, Tailwind CSS
+
+API: Twitter API v2 (fetches user profile)
+
+Image Generation: html2canvas (for downloading the card)
+
+Optional Backend: Node.js/Express (for hiding API keys securely)
+
+⚡ How It Works
+
+Enter Twitter username
+
+Fetch user data via Twitter API
+
+Generate Pokémon card with user info + random stats & abilities
+
+Download the card as an image
+
+
