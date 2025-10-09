@@ -18,7 +18,7 @@ const Input = ({ setInnput }) => {
           className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
         >
           <h2 className="text-2xl font-semibold mb-6 text-center">
-            Enter your X(formerly Twitter) username
+            Enter your superhero name and grab your SUPE Card!
           </h2>
           <div className="relative mb-8">
             <input
