@@ -4,13 +4,12 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Input from "./Components/Input/Input";
 import Card from "./Components/Card/Card";
-
+import { Outlet } from "react-router-dom";
 function App() {
   const [input, setInnput] = useState("");
   return (
     <div className="w=flex h-screen">
-      <Input setInnput={setInnput} />
-      <Card input={input} />
+      <Outlet />
     </div>
   );
 }
