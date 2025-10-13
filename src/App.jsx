@@ -9,7 +9,7 @@ function App() {
   const [input, setInnput] = useState("");
   return (
     <div className="w=flex h-screen">
-      <Outlet />
+      <Outlet context={{ input, setInnput }} />
     </div>
   );
 }

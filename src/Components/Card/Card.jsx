@@ -1,7 +1,9 @@
 import { quirkyPowers } from "../index.js";
 import { useState } from "react";
 import { useEffect } from "react";
-const Card = ({ input }) => {
+import { useOutletContext } from "react-router-dom";
+const Card = () => {
+  const { input } = useOutletContext();
   const [power, setPower] = useState(null);
   const ImageNumber = Math.floor(Math.random() * 6) + 1;
   const PowerNumber = Math.floor(Math.random() * 100) + 1;

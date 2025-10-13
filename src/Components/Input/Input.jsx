@@ -1,13 +1,17 @@
 import { useState } from "react";
-
-const Input = ({ setInnput }) => {
+import { useNavigate } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
+const Input = () => {
+  const { setInnput } = useOutletContext();
   const [username, setUsername] = useState("");
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setUsername(e.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
     setInnput(username);
+    navigate("/card");
   };
 
   return (
