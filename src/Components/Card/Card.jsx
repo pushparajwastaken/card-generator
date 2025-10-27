@@ -11,7 +11,7 @@ const Card = () => {
   const { input } = useOutletContext();
   const navigate = useNavigate();
   useEffect(() => {
-    if (!input) {
+    if (!input || input.trim() === "") {
       navigate("/");
     }
   }, [input, navigate]);
