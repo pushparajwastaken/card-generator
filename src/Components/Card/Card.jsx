@@ -1,13 +1,20 @@
 import { quirkyPowers } from "../index.js";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
-import { useOutletContext } from "react-router-dom";
+
 import { toPng } from "html-to-image";
 import * as htmlToImage from "html-to-image";
 import download from "downloadjs";
+import { useOutletContext, useNavigate } from "react-router-dom";
 
 const Card = () => {
   const { input } = useOutletContext();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (!input) {
+      navigate("/");
+    }
+  }, [input, navigate]);
   const [power, setPower] = useState(null);
   const [ImageNumber] = useState(Math.floor(Math.random() * 6) + 1);
   const [PowerNumber] = useState(Math.floor(Math.random() * 150) + 1);
