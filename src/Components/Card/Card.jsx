@@ -120,7 +120,7 @@ const Card = () => {
       <div className="mt-6">
         <button
           onClick={downloadCard}
-          className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+          className="bg-black  hover:bg-neutral-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-transform transform hover:scale-105"
         >
           Download Card
         </button>
