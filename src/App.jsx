@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom";
 function App() {
   const [input, setInnput] = useState("");
   return (
-    <div className="w=flex h-screen">
+    <div className="w=flex h-screen font-mono">
       <Outlet context={{ input, setInnput }} />
     </div>
   );
