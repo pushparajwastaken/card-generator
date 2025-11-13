@@ -38,12 +38,12 @@ const Card = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-slate-700 via-slate-600 to-slate-800 p-6">
       <div
         ref={cardRef}
-        className="relative w-80 h-96 transform transition-all duration-300 hover:scale-105 hover:rotate-1"
+        className="relative w-80 min-h-96 transform transition-all duration-300 hover:scale-105 hover:rotate-1"
         style={{ perspective: "1000px" }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-transparent to-purple-500 opacity-20 rounded-2xl"></div>
 
-        <div className="relative w-full h-full bg-gradient-to-br from-yellow-400 via-orange-300 to-red-400 rounded-2xl shadow-2xl border-8 border-yellow-500 overflow-hidden">
+        <div className="relative pb-1 w-full h-full bg-gradient-to-br from-yellow-400 via-orange-300 to-red-400 rounded-2xl shadow-2xl border-8 border-yellow-500 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-10"></div>
 
           <div className="bg-gradient-to-r from-red-600 to-orange-600 py-2 px-4 border-b-4 border-yellow-600">
@@ -107,14 +107,7 @@ const Card = () => {
               </div>
             </div>
           )}
-
-          <div className="absolute bottom-2 right-2 bg-black bg-opacity-50 rounded px-2 py-1">
-            <span className="text-yellow-400 font-bold text-xs">
-              #{power?.id}
-            </span>
-          </div>
         </div>
-
         <div className="absolute inset-0 bg-gradient-to-br from-yellow-600 to-red-600 rounded-2xl -z-10 transform translate-x-1 translate-y-1"></div>
       </div>
       <div className="mt-6">
